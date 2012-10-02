@@ -9,11 +9,11 @@
     $telefone = false;
     $mensagem = false;
 
-    $assunto = "Email de contato do LiveCapital";
+    $assunto = "";
 
     if((isset($_POST)) && (isset($_POST['nome'])))
     {
-        $destinatario = 'gusmorada@gmail.com';
+        $destinatario = '';
 
         if((isset($_POST['nome'])) && ($_POST['nome'] != ""))
             $nome = $_POST['nome'];
